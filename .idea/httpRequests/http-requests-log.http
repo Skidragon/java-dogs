@@ -1,3 +1,84 @@
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063927.200.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063805.200.json
+
+###
+
+GET http://localhost:8080/dogs/breeds
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063757.200.json
+
+###
+
+GET http://localhost:8080/dogs/weight
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063752.200.json
+
+###
+
+GET http://localhost:8080/dogs/weight
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063652.200.json
+
+###
+
+GET http://localhost:8080/dogs/weight
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063556.200.json
+
+###
+
+GET http://localhost:8080/dogs/weight
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T063522.500.json
+
+###
+
+GET http://localhost:8080/dogs/breeds
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T062432.200.json
+
+###
+
+GET http://localhost:8080/dogs/2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T062428.200.json
+
+###
+
 GET http://localhost:8080/dogs/2
 Accept: */*
 Cache-Control: no-cache

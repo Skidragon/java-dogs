@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Dog {
     private @Id
     @GeneratedValue Long id; //primary key automatically populated
-    private String name;
+    private String breed;
     private int avgWeight;
     private boolean isForApartment;
 
@@ -21,7 +21,7 @@ public class Dog {
     }
 
     public Dog(String name, int avgWeight, boolean isForApartment) {
-        this.name = name;
+        this.breed = name;
         this.avgWeight = avgWeight;
         this.isForApartment = isForApartment;
     }
