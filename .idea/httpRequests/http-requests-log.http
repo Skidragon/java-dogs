@@ -1,0 +1,168 @@
+GET http://localhost:8080/dogs/2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044935.200.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044921.200.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044727.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044725-1.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044725.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044724.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044723.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T044700.404.json
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044628.404.json
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044627-1.404.json
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044627.404.json
+
+###
+
+GET http://localhost:8080
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044626.404.json
+
+###
+
+GET http://localhost:8080/dog
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044623.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044619.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044618.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044616.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044610.404.json
+
+###
+
+GET http://localhost:8080/dogs/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044521.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044506.404.json
+
+###
+
+GET http://localhost:8080/dogs
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-12T044458.404.json
+
+###
+

@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "name": "Bulldog",
+  "avgWeight": 50,
+  "forApartment": true,
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/dogs/2"
+    },
+    "dogs": {
+      "href": "http://localhost:8080/dogs"
+    }
+  }
+}
