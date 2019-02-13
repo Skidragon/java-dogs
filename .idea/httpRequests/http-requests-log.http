@@ -5,6 +5,26 @@ Content-Type: application/json
 
  {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
 
+<> 2019-02-12T093831.200.json
+
+###
+
+DELETE http://localhost:8080/dogs/1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
 <> 2019-02-12T093210.200.json
 
 ###
@@ -433,24 +453,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2019-02-12T085736.500.json
-
-###
-
-GET http://localhost:8080/dogs/4
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T085735.500.json
-
-###
-
-GET http://localhost:8080/dogs/3
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T085734.500.json
 
 ###
 
