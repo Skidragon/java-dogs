@@ -1,3 +1,58 @@
+GET http://localhost:8080/dogs/breeds
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+<> 2019-02-13T114147.200.json
+
+###
+
+GET http://localhost:8080/dogs/5
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+<> 2019-02-13T114144.200.json
+
+###
+
+GET http://localhost:8080/dogs/6
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+<> 2019-02-13T114142.200.json
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+<> 2019-02-13T114130.200.json
+
+###
+
+POST http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+ {"breed": "SpringerMutatated",   "avgWeight": 50,   "forApartment": false}
+
+<> 2019-02-13T114121.200.json
+
+###
+
 GET http://localhost:8080/dogs/
 Accept: */*
 Cache-Control: no-cache
@@ -408,51 +463,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2019-02-12T090004.500.json
-
-###
-
-GET http://localhost:8080/dogs/2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T090003.500.json
-
-###
-
-GET http://localhost:8080/dogs/2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T090002.500.json
-
-###
-
-GET http://localhost:8080/dogs/2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T090001.500.json
-
-###
-
-GET http://localhost:8080/dogs/2
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T085947.500.json
-
-###
-
-GET http://localhost:8080/dogs/5
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2019-02-12T085736.500.json
 
 ###
 

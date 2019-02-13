@@ -98,6 +98,11 @@ public class DogController {
                 .created(new URI(resource.getId().expand().getHref()))
                 .body(resource);
     }
+    @PostMapping("/dogs")
+    public Dog createDog(@RequestBody Dog newDog)  {
+        return dogRepo.save(newDog);
+    }
+
     @DeleteMapping("/dogs/{id}")
     public ResponseEntity<?> deleteDog(@PathVariable Long id)
     {
