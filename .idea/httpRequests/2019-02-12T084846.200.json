@@ -1,0 +1,95 @@
+{
+  "_embedded": {
+    "dogList": [
+      {
+        "id": 2,
+        "breed": "Bulldog",
+        "avgWeight": 50,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/2"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Bulldog"
+            },
+            {
+              "href": "http://localhost:8080/dogs/apartment"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "breed": "Boston Terrie",
+        "avgWeight": 35,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/4"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Boston%20Terrie"
+            },
+            {
+              "href": "http://localhost:8080/dogs/apartment"
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "breed": "Corgie",
+        "avgWeight": 35,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/5"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Corgie"
+            },
+            {
+              "href": "http://localhost:8080/dogs/apartment"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/dogs/apartment"
+    }
+  }
+}

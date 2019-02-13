@@ -1,3 +1,53 @@
+GET http://localhost:8080/dogs/apartment
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T084846.200.json
+
+###
+
+GET http://localhost:8080/dogs/Springer
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T084253.500.json
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T084239.200.json
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-02-12T084127.200.json
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/dogs/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
 GET http://localhost:8080/dogs/
 Accept: */*
 Cache-Control: no-cache
@@ -379,54 +429,6 @@ Accept: */*
 Cache-Control: no-cache
 
 <> 2019-02-12T044619.404.json
-
-###
-
-GET http://localhost:8080/dogs
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044618.404.json
-
-###
-
-GET http://localhost:8080/dogs
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044616.404.json
-
-###
-
-GET http://localhost:8080/dogs
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044610.404.json
-
-###
-
-GET http://localhost:8080/dogs/1
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044521.404.json
-
-###
-
-GET http://localhost:8080/dogs
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044506.404.json
-
-###
-
-GET http://localhost:8080/dogs
-Accept: */*
-Cache-Control: no-cache
-
-<> 2019-02-12T044458.404.json
 
 ###
 
