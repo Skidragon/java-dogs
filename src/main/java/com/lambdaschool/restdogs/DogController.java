@@ -3,10 +3,11 @@ package com.lambdaschool.restdogs;
 import org.springframework.data.domain.Sort;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.Resources;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -78,23 +79,23 @@ public class DogController {
 
         return new Resources<>(dogs, linkTo(methodOn(DogController.class).findApartmentDogs()).withSelfRel());
     }
-//    @PutMapping("/dogs/{id}")
-//    public ResponseEntity<?> updateDog(@RequestBody Dog dogUpdates, @PathVariable Long id) throws URISyntaxException {
-//        Dog updatedDog = dogRepo.findById(id)
-//                .map(dog -> {
-//                    dog.setAvgWeight(dog.getAvgWeight());
-//                    dog.setBreed(dogUpdates.getBreed());
-//                    dog.setForApartment(dogUpdates.isForApartment());
-//                    return dogRepo.save(dog);
-//                })
-//                .orElseGet(() -> {
-//                    dogUpdates.setId(id);
-//                    return dogRepo.save(dogUpdates);
-//                });
-//        Resource<Dog> resource = assembler.toResource(updatedDog);
-//
-//        return ResponseEntity
-//                .created(new URI(resource.getId().expand().getHref()))
-//                .body(resource);
-//    }
+    @PutMapping("/dogs/{id}")
+    public ResponseEntity<?> updateDog(@RequestBody Dog dogUpdates, @PathVariable Long id) throws URISyntaxException {
+        Dog updatedDog = dogRepo.findById(id)
+                .map(dog -> {
+                    dog.setAvgWeight(dog.getAvgWeight());
+                    dog.setBreed(dogUpdates.getBreed());
+                    dog.setForApartment(dogUpdates.isForApartment());
+                    return dogRepo.save(dog);
+                })
+                .orElseGet(() -> {
+                    dogUpdates.setId(id);
+                    return dogRepo.save(dogUpdates);
+                });
+        Resource<Dog> resource = assembler.toResource(updatedDog);
+
+        return ResponseEntity
+                .created(new URI(resource.getId().expand().getHref()))
+                .body(resource);
+    }
 }
