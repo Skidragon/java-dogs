@@ -58,11 +58,11 @@ public class DogController {
                 .collect(Collectors.toList());
         return new Resources<>(dogs, linkTo(methodOn(DogController.class).allWeightsSorted()).withSelfRel());
     }
-    @GetMapping("/dogs/{breed}")
+    @GetMapping("/dogs/breeds/{breed}")
     public Resources<Resource<Dog>> findSpecificBreed(@PathVariable String breed) {
         List<Resource<Dog>> dogsChosenByBreed = dogRepo.findAll()
                 .stream()
-                .filter(dog -> dog.getBreed() == breed)
+                .filter(dog -> dog.getBreed().toLowerCase().equals(breed))
                 .map(assembler::toResource)
                 .collect(Collectors.toList());
 
@@ -78,4 +78,23 @@ public class DogController {
 
         return new Resources<>(dogs, linkTo(methodOn(DogController.class).findApartmentDogs()).withSelfRel());
     }
+//    @PutMapping("/dogs/{id}")
+//    public ResponseEntity<?> updateDog(@RequestBody Dog dogUpdates, @PathVariable Long id) throws URISyntaxException {
+//        Dog updatedDog = dogRepo.findById(id)
+//                .map(dog -> {
+//                    dog.setAvgWeight(dog.getAvgWeight());
+//                    dog.setBreed(dogUpdates.getBreed());
+//                    dog.setForApartment(dogUpdates.isForApartment());
+//                    return dogRepo.save(dog);
+//                })
+//                .orElseGet(() -> {
+//                    dogUpdates.setId(id);
+//                    return dogRepo.save(dogUpdates);
+//                });
+//        Resource<Dog> resource = assembler.toResource(updatedDog);
+//
+//        return ResponseEntity
+//                .created(new URI(resource.getId().expand().getHref()))
+//                .body(resource);
+//    }
 }
