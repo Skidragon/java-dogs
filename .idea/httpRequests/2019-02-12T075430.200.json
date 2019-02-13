@@ -1,0 +1,136 @@
+{
+  "_embedded": {
+    "dogList": [
+      {
+        "id": 1,
+        "breed": "Springer",
+        "avgWeight": 50,
+        "forApartment": false,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/1"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Springer"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "breed": "Bulldog",
+        "avgWeight": 50,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/2"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Bulldog"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "breed": "Collie",
+        "avgWeight": 50,
+        "forApartment": false,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/3"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Collie"
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "breed": "Boston Terrie",
+        "avgWeight": 35,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/4"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Boston%20Terrie"
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "breed": "Corgie",
+        "avgWeight": 35,
+        "forApartment": true,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/dogs/5"
+          },
+          "dogs": [
+            {
+              "href": "http://localhost:8080/dogs"
+            },
+            {
+              "href": "http://localhost:8080/dogs/breeds"
+            },
+            {
+              "href": "http://localhost:8080/dogs/weight"
+            },
+            {
+              "href": "http://localhost:8080/dogs/Corgie"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/dogs"
+    }
+  }
+}

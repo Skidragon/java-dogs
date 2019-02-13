@@ -58,6 +58,14 @@ public class DogController {
                 .collect(Collectors.toList());
         return new Resources<>(dogs, linkTo(methodOn(DogController.class).allWeightsSorted()).withSelfRel());
     }
+    @GetMapping("/dogs/{breed}")
+    public Resources<Resource<Dog>> findSpecificBreed(@PathVariable String breed) {
+        List<Resource<Dog>> dogsChosenByBreed = dogRepo.findAll()
+                .stream()
+                .filter(dog -> dog.getBreed() == breed)
+                .map(assembler::toResource)
+                .collect(Collectors.toList());
 
-
+        return new Resources<>(dogsChosenByBreed, linkTo(methodOn(DogController.class).findSpecificBreed(breed)).withSelfRel());
+    }
 }

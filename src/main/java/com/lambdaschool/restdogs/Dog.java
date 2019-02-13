@@ -20,8 +20,8 @@ public class Dog {
 
     }
 
-    public Dog(String name, int avgWeight, boolean isForApartment) {
-        this.breed = name;
+    public Dog(String breed, int avgWeight, boolean isForApartment) {
+        this.breed = breed;
         this.avgWeight = avgWeight;
         this.isForApartment = isForApartment;
     }
